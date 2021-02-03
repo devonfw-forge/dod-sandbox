@@ -15,7 +15,7 @@ Here parent pom.xml is configured for the JIB plugin.
               </execution>
 ```
 
-# With docker image
+# With docker demon
 
 Command to build the docker image
 ```
@@ -25,7 +25,7 @@ $ devon mvn package jib:dockerBuild
  ```
 $ docker run --publish 8081:8081 <image_name or image_id>
 ```
-# Without docker image:
+# Without docker demon
 ```
 $devon mvn compile jib:build    -Djib.to.image=docker.io/<username>/<appname>:<tag>     -Djib.to.auth.username=<username>     -Djib.to.auth.password=<password>
    - this command uploads the image to the docker repository.
