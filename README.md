@@ -1,7 +1,7 @@
 # dod-sandbox
 A sandbox to play around with .github templates for PRs enforcing DoD, etc.
 
-=== With docker image
+# With docker image
 
 Command to build the docker image
 
