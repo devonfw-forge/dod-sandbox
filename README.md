@@ -7,12 +7,13 @@ Here parent pom.xml is configured for the JIB plugin.
  
  ```
           <executions>
-              <execution>
-                <phase>package</phase>
-                <goals>
-                  <goal>dockerBuild</goal>
-                </goals>
-              </execution>
+            <execution>
+               <phase>package</phase>
+               <goals>
+                 <goal>dockerBuild</goal>
+               </goals>
+            </execution>
+          <executions>
 ```
 
 # With docker daemon
