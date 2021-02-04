@@ -3,7 +3,7 @@ The sample application can be used to testing the JIB maven plugin.
 
 Here parent pom.xml is configured for the JIB plugin.  
  
- Tested the app by moving the plugin to server module. The image is not getting created after adding the below changes in pom.xml, but not able to run it.
+ Tested the app by moving the plugin to server module. The image is getting created after adding the below changes in pom.xml, but not able to run it.
  
  ```
           <executions>
