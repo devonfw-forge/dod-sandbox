@@ -28,8 +28,9 @@ $ docker run --publish 8081:8081 <image_name or image_id>
 # Without docker daemon
 ```
 $devon mvn compile jib:build    -Djib.to.image=docker.io/<username>/<appname>:<tag>     -Djib.to.auth.username=<username>     -Djib.to.auth.password=<password>
-   - this command uploads the image to the docker repository.
-
+   ```
+   - this command uploads the image to the docker hub.
+```
 $ docker run --publish 8081:8081 <image_name or image_id>
 
 ```
