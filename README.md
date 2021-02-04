@@ -1,20 +1,6 @@
 # dod-sandbox
 The sample application can be used to testing the JIB maven plugin.
 
-Here parent pom.xml is configured for the JIB plugin.  
- 
- Tested the app by moving the plugin to server module. The image is getting created after adding the below changes in pom.xml, but not able to run it.
- 
- ```
-          <executions>
-            <execution>
-               <phase>package</phase>
-               <goals>
-                 <goal>dockerBuild</goal>
-               </goals>
-            </execution>
-          <executions>
-```
 
 # With docker daemon
 
@@ -34,4 +20,19 @@ $devon mvn compile jib:build    -Djib.to.image=docker.io/<username>/<appname>:<t
 ```
 $ docker run --publish 8081:8081 <image_name or image_id>
 
+```
+
+Here parent pom.xml is configured for the JIB plugin.  
+ 
+ Tested the app by moving the plugin to server module. The image is getting created after adding the below changes in pom.xml, but not able to run it.
+ 
+ ```
+          <executions>
+            <execution>
+               <phase>package</phase>
+               <goals>
+                 <goal>dockerBuild</goal>
+               </goals>
+            </execution>
+          <executions>
 ```
