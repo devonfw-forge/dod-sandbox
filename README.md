@@ -22,7 +22,8 @@ $ docker run --publish 8081:8081 <image_name or image_id>
 
 ```
 
-Here parent pom.xml is configured for the JIB plugin.  
+Here parent pom.xml is configured for the JIB plugin.
+TODO: Test for PullRequest Template...
  
  Tested the app by moving the plugin to server module. The image is getting created after adding the below changes in pom.xml, but not able to run it.
  
